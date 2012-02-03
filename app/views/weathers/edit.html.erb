@@ -1,0 +1,9 @@
+<h2>天気の設定</h2>
+
+<% form_for :weather_setting, @weather_setting, :url => {:action => 'update'}, :html => {:method => :put } do |f| %>
+
+<p>地域 <%= f.select :city_id, options_for_select(City.all.map{|c| [c.name, c.id]}, @weather_setting.city_id) %></p>
+
+<%= submit_tag l(:button_save) %>
+
+<% end %>

@@ -1,0 +1,1035 @@
+Script started on Fri Feb  3 23:41:28 2012
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~/app/.../plugins/redmine_weather]% [Ksscript[1m [0m[0m /gene         s  ssc
+[Jsc_auth        scalac         sched          screen         scselect       
+sc_usage       scaladoc       schemagen      screencapture  scss           
+scala          scalap         scp            script         scutil         [3A[0m[27m[24m[37Csc[Kript/generate
+[Jzsh: no such file or directory: script/generate
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~/app/.../plugins/redmine_weather]% [Ksscript/     s  ccd ..
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~/app/.../vendor/plugins]% [Kccd ..
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~/app/.../redmine_weather/vendor]% [Kccd ..
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~/app/ruby/redmine_weather]% [Klll
+total 64
+drwxr-xr-x  23 agilekawabata  staff   782 10 21 20:50 [36m.[39;49m[0m/
+drwxr-xr-x  28 agilekawabata  staff   952  1 27 23:53 [36m..[39;49m[0m/
+-rw-r--r--@  1 agilekawabata  staff  6148 10 21 20:50 .DS_Store
+drwxr-xr-x  12 agilekawabata  staff   408 10 21 19:26 [36m.git[39;49m[0m/
+-rw-r--r--   1 agilekawabata  staff   322 10 20 04:00 .gitignore
+-rw-r--r--   1 agilekawabata  staff   317 10 20 04:00 .hgignore
+-rw-r--r--@  1 agilekawabata  staff    84  2  3 21:02 Gemfile
+-rw-r--r--   1 agilekawabata  staff   655  2  3 21:03 Gemfile.lock
+-rw-r--r--   1 agilekawabata  staff   208 10 20 04:00 README.rdoc
+-rw-r--r--   1 agilekawabata  staff   307 10 20 04:00 Rakefile
+drwxr-xr-x   6 agilekawabata  staff   204 10 20 04:00 [36mapp[39;49m[0m/
+drwxr-xr-x  13 agilekawabata  staff   442 10 21 20:50 [36mconfig[39;49m[0m/
+drwxr-xr-x   4 agilekawabata  staff   136 10 21 22:52 [36mdb[39;49m[0m/
+drwxr-xr-x  10 agilekawabata  staff   340 10 22 02:22 [36mdoc[39;49m[0m/
+drwxr-xr-x   5 agilekawabata  staff   170 10 20 04:00 [36mextra[39;49m[0m/
+drwxr-xr-x   3 agilekawabata  staff   102 10 20 04:00 [36mfiles[39;49m[0m/
+drwxr-xr-x  12 agilekawabata  staff   408 10 20 04:00 [36mlib[39;49m[0m/
+drwxr-xr-x   4 agilekawabata  staff   136 10 21 20:51 [36mlog[39;49m[0m/
+drwxr-xr-x  14 agilekawabata  staff   476 10 20 04:00 [36mpublic[39;49m[0m/
+drwxr-xr-x  13 agilekawabata  staff   442 10 20 04:00 [36mscript[39;49m[0m/
+drwxr-xr-x  11 agilekawabata  staff   374 10 20 04:00 [36mtest[39;49m[0m/
+drwxr-xr-x   8 agilekawabata  staff   272 10 21 20:51 [36mtmp[39;49m[0m/
+drwxr-xr-x   4 agilekawabata  staff   136 10 20 04:00 [36mvendor[39;49m[0m/
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~/app/ruby/redmine_weather]% [K
+bck-i-search: _[K[A[15C[4ms[24mcript/generate[1B[31Ds_[A[14C[4ms[4mc[24m[1B[17Dc_[A[13C[4ms[4mc[4mr[24m[1B[17Dr_[A[12C[2C[4mr[4mi[24m[1B[17Di_[A[11C[3C[4mi[4mp[24m[1B[17Dp_[A[10C[4C[4mp[4mt[24m[1B[17Dt_[A[9C[5C[4mt[4m/[24m[1B[17D/_[A[8C[6C[4m/[4mg[24m[1B[17Dg_[A[7C[7C[4mg[4me[24m[1B[17De_[A[6C[8C[4me[4mn[24m[1B[17Dn_[A[5C[24m [24m [24ms[24mc[24mr[24mi[24mp[24mt[24m/[24mgenerate[1B[K[A[32C[P[P[15C  [17D[15C[1Bbck-i-search: _[K[A[30C[15Dgem[4m [24mlist       [1B[31D _[A[17C[24m [1B[K[A[34C[4C     g  [1Bbck-i-search: _[K[A[15Cscript/[4ms[24merver[1B[29Ds_[A[21C[4ms[4mc[24m[5C[24ms[1B[23Dc_[A[13C[4ms[4mc[4mr[24m[1B[17Dr_[A[12C[2C[4mr[4mi[24m[1B[17Di_[A[11C[3C[4mi[4mp[24m[1B[17Dp_[A[10C[4C[4mp[4mt[24m[1B[17Dt_[A[9C[5C[4mt[4m/[24m[1B[17D/_[A[8C[6C[4m/[4mg[24menerate redmine_plugin_controller weather weather edit[1B[71Dg_[A[7C[7C[4mg[4me[24m[1B[17De_[A[6C[8C[4me[4mn[24m[1B[17Dn_[A[5C[9C[4mn[4me[24m[1B[17De_[A[4C[10C[4me[4mr[24m[1B[17Dr_[A[3C[11C[4mr[4ma[24m[1B[17Da_[A[2C[12C[4ma[4mt[24m[1B[17Dt_[A[1C[13C[4mt[4me[24m[1B[17De_[A[30C[11P[9C                       [62D[30C_controller weather weather edit[62D[50Cedit        [62D[31Cmodel[5P[9CWeatherSetting city_id:integer[75D[30C[6P[9C                                    [75D[24ms[24mc[24mr[24mi[24mp[24mt[24m/[24mg[24me[24mn[24me[24mr[24ma[24mt[24me[1B[K[A[68C       [1BMissing the i18n 0.4.2 gem. Please `gem install -v=0.4.2 i18n`
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~/app/ruby/redmine_weather]% [Kggem list
+
+*** LOCAL GEMS ***
+
+actionmailer (3.2.1, 3.2.0)
+actionpack (3.2.1, 3.2.0)
+activemodel (3.2.1, 3.2.0)
+activerecord (3.2.1, 3.2.0)
+activeresource (3.2.1, 3.2.0)
+activesupport (3.2.1, 3.2.0)
+arel (3.0.0)
+builder (3.0.0)
+bundler (1.0.21)
+coffee-rails (3.2.2, 3.2.1)
+coffee-script (2.2.0)
+coffee-script-source (1.2.0)
+domain_name (0.5.2)
+erubis (2.7.0)
+execjs (1.3.0)
+hike (1.2.1)
+i18n (0.6.0)
+i18n_generators (1.1.0)
+journey (1.0.1, 1.0.0)
+jquery-rails (2.0.0)
+json (1.6.5)
+mail (2.4.1)
+mechanize (2.1)
+mime-types (1.17.2)
+multi_json (1.0.4)
+net-http-digest_auth (1.2)
+net-http-persistent (2.3.3)
+nokogiri (1.5.0)
+ntlm-http (0.1.1)
+polyglot (0.3.3)
+rack (1.4.1, 1.4.0)
+rack-cache (1.1)
+rack-ssl (1.3.2)
+rack-test (0.6.1)
+rails (3.2.1)
+railties (3.2.1, 3.2.0)
+rake (0.9.2.2, 0.9.2 ruby)
+rdoc (3.12)
+sass (3.1.12)
+sass-rails (3.2.4, 3.2.3)
+sprockets (2.1.2)
+sqlite3 (1.3.5)
+thor (0.14.6)
+tilt (1.3.3)
+treetop (1.4.10)
+tzinfo (0.3.31)
+uglifier (1.2.2)
+unf (0.0.4)
+unf_ext (0.0.4)
+webrobots (0.0.13)
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~/app/ruby/redmine_weather]% [Krrvm ge  use 1.8.7
+[32mUsing /Users/agilekawabata/.rvm/gems/ruby-1.8.7-p334(B[m
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~/app/ruby/redmine_weather]% [Krrvm gemset use redmine
+[32mNow using gemset 'redmine'(B[m
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~/app/ruby/redmine_weather]% [Kggem list
+
+*** LOCAL GEMS ***
+
+actionmailer (2.3.11)
+actionpack (2.3.11)
+activerecord (2.3.11)
+activeresource (2.3.11)
+activesupport (2.3.11)
+bundler (1.0.21)
+domain_name (0.5.2)
+i18n (0.4.2)
+i18n_generators (1.1.0)
+mechanize (2.1)
+mysql (2.8.1)
+net-http-digest_auth (1.2)
+net-http-persistent (2.4)
+nokogiri (1.5.0)
+ntlm-http (0.1.1)
+rack (1.1.2)
+rails (2.3.11)
+rake (0.8.7)
+unf (0.0.4)
+unf_ext (0.0.4)
+weatherhacks (0.2.0)
+webrobots (0.0.13)
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~/app/ruby/redmine_weather]% [Kgem list[8Drv[2Cgemset use redmine[18Duse 1.8.7         [9D[13Dge[2Clist     [8Dscript/generate redmine_plugin
+config.load_paths is deprecated and removed in Rails 3, please use autoload_paths instead
+config.load_paths= is deprecated and removed in Rails 3, please use autoload_paths= instead
+Usage: script/generate redmine_plugin RedminePluginName [options]
+
+Rails Info:
+    -v, --version                    Show the Rails version number and quit.
+    -h, --help                       Show this help message and quit.
+
+General Options:
+    -p, --pretend                    Run but do not make any changes.
+    -f, --force                      Overwrite files that already exist.
+    -s, --skip                       Skip files that already exist.
+    -q, --quiet                      Suppress normal output.
+    -t, --backtrace                  Debugging: show backtrace on errors.
+    -c, --svn                        Modify files with subversion. (Note: svn must be in path)
+    -g, --git                        Modify files with git. (Note: git must be in path)
+
+Description:
+    The plugin generator creates stubs for a new Redmine plugin.
+	
+Example:
+    ./script/generate redmine_plugin meetings
+      create  vendor/plugins/redmine_meetings/app/controllers
+      create  vendor/plugins/redmine_meetings/app/helpers
+      create  vendor/plugins/redmine_meetings/app/models
+      create  vendor/plugins/redmine_meetings/app/views
+      create  vendor/plugins/redmine_meetings/db/migrate
+      create  vendor/plugins/redmine_meetings/lib/tasks
+      create  vendor/plugins/redmine_meetings/assets/images
+      create  vendor/plugins/redmine_meetings/assets/javascripts
+      create  vendor/plugins/redmine_meetings/assets/stylesheets
+      create  vendor/plugins/redmine_meetings/lang
+      create  vendor/plugins/redmine_meetings/README
+      create  vendor/plugins/redmine_meetings/init.rb
+      create  vendor/plugins/redmine_meetings/lang/en.yml
+      create  vendor/plugins/redmine_meetings/config/locales/en.yml
+      create  vendor/plugins/redmine_meetings/test/test_helper.rb
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~/app/ruby/redmine_weather]% [Kscript/generate redmine_plugin           [19D                   [19Dscript/generate red[19Dgem list           [11D[8Dscript/generate redmine_plugin weather
+config.load_paths is deprecated and removed in Rails 3, please use autoload_paths instead
+config.load_paths= is deprecated and removed in Rails 3, please use autoload_paths= instead
+      exists  vendor/plugins/redmine_weather/app/controllers
+      exists  vendor/plugins/redmine_weather/app/helpers
+      exists  vendor/plugins/redmine_weather/app/models
+      exists  vendor/plugins/redmine_weather/app/views
+      exists  vendor/plugins/redmine_weather/db/migrate
+      exists  vendor/plugins/redmine_weather/lib/tasks
+      exists  vendor/plugins/redmine_weather/assets/images
+      exists  vendor/plugins/redmine_weather/assets/javascripts
+      exists  vendor/plugins/redmine_weather/assets/stylesheets
+      exists  vendor/plugins/redmine_weather/lang
+      exists  vendor/plugins/redmine_weather/config/locales
+      exists  vendor/plugins/redmine_weather/test
+   identical  vendor/plugins/redmine_weather/README.rdoc
+overwrite vendor/plugins/redmine_weather/init.rb? (enter "h" for help) [Ynaqdh] q
+aborting redmine_plugin
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~/app/ruby/redmine_weather]% [Kscript/generate redmine_plugin weather -h
+config.load_paths is deprecated and removed in Rails 3, please use autoload_paths instead
+config.load_paths= is deprecated and removed in Rails 3, please use autoload_paths= instead
+Usage: script/generate redmine_plugin RedminePluginName [options]
+
+Rails Info:
+    -v, --version                    Show the Rails version number and quit.
+    -h, --help                       Show this help message and quit.
+
+General Options:
+    -p, --pretend                    Run but do not make any changes.
+    -f, --force                      Overwrite files that already exist.
+    -s, --skip                       Skip files that already exist.
+    -q, --quiet                      Suppress normal output.
+    -t, --backtrace                  Debugging: show backtrace on errors.
+    -c, --svn                        Modify files with subversion. (Note: svn must be in path)
+    -g, --git                        Modify files with git. (Note: git must be in path)
+
+Description:
+    The plugin generator creates stubs for a new Redmine plugin.
+	
+Example:
+    ./script/generate redmine_plugin meetings
+      create  vendor/plugins/redmine_meetings/app/controllers
+      create  vendor/plugins/redmine_meetings/app/helpers
+      create  vendor/plugins/redmine_meetings/app/models
+      create  vendor/plugins/redmine_meetings/app/views
+      create  vendor/plugins/redmine_meetings/db/migrate
+      create  vendor/plugins/redmine_meetings/lib/tasks
+      create  vendor/plugins/redmine_meetings/assets/images
+      create  vendor/plugins/redmine_meetings/assets/javascripts
+      create  vendor/plugins/redmine_meetings/assets/stylesheets
+      create  vendor/plugins/redmine_meetings/lang
+      create  vendor/plugins/redmine_meetings/README
+      create  vendor/plugins/redmine_meetings/init.rb
+      create  vendor/plugins/redmine_meetings/lang/en.yml
+      create  vendor/plugins/redmine_meetings/config/locales/en.yml
+      create  vendor/plugins/redmine_meetings/test/test_helper.rb
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~/app/ruby/redmine_weather]% [Kscript/generate redmine_plugin weather -h  i18n ja
+config.load_paths is deprecated and removed in Rails 3, please use autoload_paths instead
+config.load_paths= is deprecated and removed in Rails 3, please use autoload_paths= instead
+      exists  vendor/plugins/redmine_weather/app/controllers
+      exists  vendor/plugins/redmine_weather/app/helpers
+      exists  vendor/plugins/redmine_weather/app/models
+      exists  vendor/plugins/redmine_weather/app/views
+      exists  vendor/plugins/redmine_weather/db/migrate
+      exists  vendor/plugins/redmine_weather/lib/tasks
+      exists  vendor/plugins/redmine_weather/assets/images
+      exists  vendor/plugins/redmine_weather/assets/javascripts
+      exists  vendor/plugins/redmine_weather/assets/stylesheets
+      exists  vendor/plugins/redmine_weather/lang
+      exists  vendor/plugins/redmine_weather/config/locales
+      exists  vendor/plugins/redmine_weather/test
+   identical  vendor/plugins/redmine_weather/README.rdoc
+overwrite vendor/plugins/redmine_weather/init.rb? (enter "h" for help) [Ynaqdh] n
+        skip  vendor/plugins/redmine_weather/init.rb
+   identical  vendor/plugins/redmine_weather/lang/en.yml
+   identical  vendor/plugins/redmine_weather/config/locales/en.yml
+   identical  vendor/plugins/redmine_weather/test/test_helper.rb
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~/app/ruby/redmine_weather]% [Ksscs  rrake redmine:        -T
+(in /Users/agilekawabata/app/ruby/redmine_weather)
+DEPRECATION WARNING: Rake tasks in vendor/plugins/engines/tasks and vendor/plugins/open_id_authentication/tasks are deprecated. Use lib/tasks instead. (called from /Users/agilekawabata/.rvm/gems/ruby-1.8.7-p334@redmine/gems/rails-2.3.11/lib/tasks/rails.rb:10)
+rake ci                                                # Run the Continous Integration tests for Redmine
+rake ci:build                                          # Build Redmine
+rake ci:dump_environment                               # Dump the environment information to a BUILD_ENVIRON...
+rake ci:setup                                          # Setup Redmine for a new build.
+rake ci:teardown                                       # Finish the build
+rake config/initializers/session_store.rb              # Generates a configuration file for cookie store ses...
+rake db:abort_if_pending_migrations                    # Raises an error if there are pending migrations
+rake db:charset                                        # Retrieves the charset for the current environment's...
+rake db:collation                                      # Retrieves the collation for the current environment...
+rake db:create                                         # Create the database defined in config/database.yml ...
+rake db:create:all                                     # Create all the local databases defined in config/da...
+rake db:drop                                           # Drops the database for the current RAILS_ENV
+rake db:drop:all                                       # Drops all the local databases defined in config/dat...
+rake db:fixtures:identify                              # Search for a fixture given a LABEL or ID.
+rake db:fixtures:load                                  # Load fixtures into the current environment's database.
+rake db:fixtures:plugins:load                          # Load plugin fixtures into the current environment's...
+rake db:migrate                                        # Migrate the database through scripts in db/migrate ...
+rake db:migrate:all                                    # Migrate database and plugins to current status.
+rake db:migrate:down                                   # Runs the "down" for a given migration VERSION.
+rake db:migrate:plugin                                 # Migrate a specified plugin.
+rake db:migrate:plugins                                # Migrate plugins to current status.
+rake db:migrate:redo                                   # Rollbacks the database one migration and re migrate...
+rake db:migrate:reset                                  # Resets your database using your migrations for the ...
+rake db:migrate:up                                     # Runs the "up" for a given migration VERSION.
+rake db:migrate:upgrade_plugin_migrations              # For engines coming from Rails version < 2.0 or for ...
+rake db:migrate_plugins                                # Migrates installed plugins.
+rake db:reset                                          # Drops and recreates the database from db/schema.rb ...
+rake db:rollback                                       # Rolls the schema back to the previous version.
+rake db:schema:dump                                    # Create a db/schema.rb file that can be portably use...
+rake db:schema:load                                    # Load a schema.rb file into the database
+rake db:seed                                           # Load the seed data from db/seeds.rb
+rake db:sessions:clear                                 # Clear the sessions table
+rake db:sessions:create                                # Creates a sessions migration for use with ActiveRec...
+rake db:setup                                          # Create the database, load the schema, and initializ...
+rake db:structure:dump                                 # Dump the database structure to a SQL file
+rake db:test:clone                                     # Recreate the test database from the current environ...
+rake db:test:clone_structure                           # Recreate the test databases from the development st...
+rake db:test:load                                      # Recreate the test database from the current schema.rb
+rake db:test:prepare                                   # Check for pending migrations and load the test schema
+rake db:test:purge                                     # Empty the test database
+rake db:version                                        # Retrieves the current schema version number
+rake doc:app                                           # Build the RDOC HTML Files
+rake doc:clobber_app                                   # Remove rdoc products
+rake doc:clobber_plugins                               # Remove plugin documentation
+rake doc:clobber_rails                                 # Remove rdoc products
+rake doc:guides                                        # Generate Rails guides
+rake doc:plugins                                       # Generate documentation for all installed plugins
+rake doc:plugins:acts_as_activity_provider             # Generate documentation for the acts_as_activity_pro...
+rake doc:plugins:acts_as_activity_providerenvironment  # Create plugin documentation for 'acts_as_activity_p...
+rake doc:plugins:acts_as_attachable                    # Generate documentation for the acts_as_attachable p...
+rake doc:plugins:acts_as_attachableenvironment         # Create plugin documentation for 'acts_as_attachable'
+rake doc:plugins:acts_as_customizable                  # Generate documentation for the acts_as_customizable...
+rake doc:plugins:acts_as_customizableenvironment       # Create plugin documentation for 'acts_as_customizable'
+rake doc:plugins:acts_as_event                         # Generate documentation for the acts_as_event plugin
+rake doc:plugins:acts_as_eventenvironment              # Create plugin documentation for 'acts_as_event'
+rake doc:plugins:acts_as_list                          # Generate documentation for the acts_as_list plugin
+rake doc:plugins:acts_as_listenvironment               # Create plugin documentation for 'acts_as_list'
+rake doc:plugins:acts_as_searchable                    # Generate documentation for the acts_as_searchable p...
+rake doc:plugins:acts_as_searchableenvironment         # Create plugin documentation for 'acts_as_searchable'
+rake doc:plugins:acts_as_tree                          # Generate documentation for the acts_as_tree plugin
+rake doc:plugins:acts_as_treeenvironment               # Create plugin documentation for 'acts_as_tree'
+rake doc:plugins:acts_as_versioned                     # Generate documentation for the acts_as_versioned pl...
+rake doc:plugins:acts_as_versionedenvironment          # Create plugin documentation for 'acts_as_versioned'
+rake doc:plugins:acts_as_watchable                     # Generate documentation for the acts_as_watchable pl...
+rake doc:plugins:acts_as_watchableenvironment          # Create plugin documentation for 'acts_as_watchable'
+rake doc:plugins:awesome_nested_set                    # Generate documentation for the awesome_nested_set p...
+rake doc:plugins:awesome_nested_setenvironment         # Create plugin documentation for 'awesome_nested_set'
+rake doc:plugins:classic_pagination                    # Generate documentation for the classic_pagination p...
+rake doc:plugins:classic_paginationenvironment         # Create plugin documentation for 'classic_pagination'
+rake doc:plugins:coderay-0.9.2                         # Generate documentation for the coderay-0.9.2 plugin
+rake doc:plugins:coderay-0.9.2environment              # Create plugin documentation for 'coderay-0.9.2'
+rake doc:plugins:engines                               # Generate documentation for the engines plugin
+rake doc:plugins:enginesenvironment                    # Create plugin documentation for 'engines'
+rake doc:plugins:gravatar                              # Generate documentation for the gravatar plugin
+rake doc:plugins:gravatarenvironment                   # Create plugin documentation for 'gravatar'
+rake doc:plugins:open_id_authentication                # Generate documentation for the open_id_authenticati...
+rake doc:plugins:open_id_authenticationenvironment     # Create plugin documentation for 'open_id_authentica...
+rake doc:plugins:prepend_engine_views                  # Generate documentation for the prepend_engine_views...
+rake doc:plugins:prepend_engine_viewsenvironment       # Create plugin documentation for 'prepend_engine_views'
+rake doc:plugins:redmine_weather                       # Generate documentation for the redmine_weather plugin
+rake doc:plugins:redmine_weatherenvironment            # Create plugin documentation for 'redmine_weather'
+rake doc:plugins:rfpdf                                 # Generate documentation for the rfpdf plugin
+rake doc:plugins:rfpdfenvironment                      # Create plugin documentation for 'rfpdf'
+rake doc:plugins:ruby-net-ldap-0.0.4                   # Generate documentation for the ruby-net-ldap-0.0.4 ...
+rake doc:plugins:ruby-net-ldap-0.0.4environment        # Create plugin documentation for 'ruby-net-ldap-0.0.4'
+rake doc:rails                                         # Build the RDOC HTML Files
+rake doc:reapp                                         # Force a rebuild of the RDOC files
+rake doc:rerails                                       # Force a rebuild of the RDOC files
+rake extract_fixtures                                  # Create YAML test fixtures from data in an existing ...
+rake gems                                              # List the gems that this rails application depends on
+rake gems:build                                        # Build any native extensions for unpacked gems
+rake gems:build:force                                  # Force the build of all gems
+rake gems:install                                      # Installs all required gems.
+rake gems:refresh_specs                                # Regenerate gem specifications in correct format.
+rake gems:unpack                                       # Unpacks all required gems into vendor/gems.
+rake gems:unpack:dependencies                          # Unpacks all required gems and their dependencies in...
+rake generate_session_store                            # Generates a configuration file for cookie store ses...
+rake locales:add_key                                   # Adds a new top-level translation string to all loca...
+rake locales:remove_key                                # Removes a translation string from all locale file (...
+rake locales:update                                    # Updates language files based on en.yml content (onl...
+rake log:clear                                         # Truncates all *.log files in log/ to zero bytes
+rake middleware                                        # Prints out your Rack middleware stack
+rake notes                                             # Enumerate all annotations
+rake notes:custom                                      # Enumerate a custom annotation, specify with ANNOTAT...
+rake notes:fixme                                       # Enumerate all FIXME annotations
+rake notes:optimize                                    # Enumerate all OPTIMIZE annotations
+rake notes:todo                                        # Enumerate all TODO annotations
+rake open_id_authentication:db:clear                   # Clear the authentication tables
+rake open_id_authentication:db:create                  # Creates authentication tables for use with OpenIdAu...
+rake open_id_authentication:db:upgrade                 # Upgrade authentication tables from ruby-openid 1.x....
+rake rails:freeze:edge                                 # Lock to latest Edge Rails, for a specific release u...
+rake rails:freeze:gems                                 # Lock this application to the current gems (by unpac...
+rake rails:template                                    # Applies the template supplied by LOCATION=/path/to/...
+rake rails:unfreeze                                    # Unlock this application from freeze of gems or edge...
+rake rails:update                                      # Update both configs, scripts and public/javascripts...
+rake rails:update:application_controller               # Rename application.rb to application_controller.rb
+rake rails:update:configs                              # Update config/boot.rb from your current rails install
+rake rails:update:generate_dispatchers                 # Generate dispatcher files in RAILS_ROOT/public
+rake rails:update:javascripts                          # Update your javascripts from your current rails ins...
+rake rails:update:scripts                              # Add new scripts to the application script/ directory
+rake redmine:email:read                                # Read an email from standard input.
+rake redmine:email:receive_imap                        # Read emails from an IMAP server.
+rake redmine:email:receive_pop3                        # Read emails from an POP3 server.
+rake redmine:email:test[login]                         # Send a test email to the user with the provided log...
+rake redmine:fetch_changesets                          # Fetch changesets from the repositories
+rake redmine:load_default_data                         # Load Redmine default configuration data.
+rake redmine:migrate_from_mantis                       # Mantis migration script
+rake redmine:migrate_from_trac                         # Trac migration script
+rake redmine:permissions                               # List all permissions and the actions registered wit...
+rake redmine:plugins:hook_list                         # Enumerate all Redmine plugin hooks and their contex...
+rake redmine:send_reminders                            # Send reminders about issues due in the next days.
+rake redmine:watchers:prune                            # Removes watchers from what they can no longer view.
+rake routes                                            # Print out all defined routes in match order, with n...
+rake secret                                            # Generate a crytographically secure secret key.
+rake stats                                             # Report code statistics (KLOCs, etc) from the applic...
+rake test                                              # Run all unit, functional and integration tests
+rake test:benchmark                                    # Run tests for benchmarkdb:test:prepare / Benchmark ...
+rake test:coverage                                     # Measures test coverage
+rake test:engines:all                                  # Run tests from within engines plugins (plugins with...
+rake test:engines:functionals                          # Run tests for functionalstest:plugins:setup_plugin_...
+rake test:engines:integration                          # Run tests for integrationtest:plugins:setup_plugin_...
+rake test:engines:units                                # Run tests for unitstest:plugins:setup_plugin_fixtures
+rake test:functionals                                  # Run tests for functionalsdb:test:prepare / Run the ...
+rake test:integration                                  # Run tests for integrationdb:test:prepare / Run the ...
+rake test:plugins                                      # Run tests for pluginsenvironment / Run the plugin t...
+rake test:plugins:all                                  # Run the plugin tests in vendor/plugins/**/test (or ...
+rake test:plugins:functionals                          # Run tests for functionalssetup_plugin_fixtures
+rake test:plugins:integration                          # Run tests for integrationsetup_plugin_fixtures
+rake test:plugins:setup_plugin_fixtures                # Mirrors plugin fixtures into a single location to h...
+rake test:plugins:units                                # Run tests for unitssetup_plugin_fixtures
+rake test:profile                                      # Run tests for profiledb:test:prepare / Profile the ...
+rake test:recent                                       # Run tests for recentdb:test:prepare / Test recent c...
+rake test:scm                                          # Run unit and functional scm tests
+rake test:scm:functionals                              # Run tests for functionalsdb:test:prepare / Run the ...
+rake test:scm:setup:all                                # Creates all test repositories
+rake test:scm:setup:bazaar                             # Creates a test bazaar repository
+rake test:scm:setup:create_dir                         # Creates directory for test repositories
+rake test:scm:setup:cvs                                # Creates a test cvs repository
+rake test:scm:setup:darcs                              # Creates a test darcs repository
+rake test:scm:setup:filesystem                         # Creates a test filesystem repository
+rake test:scm:setup:git                                # Creates a test git repository
+rake test:scm:setup:mercurial                          # Creates a test mercurial repository
+rake test:scm:setup:subversion                         # Creates a test subversion repository
+rake test:scm:units                                    # Run tests for unitsdb:test:prepare / Run the scm un...
+rake test:uncommitted                                  # Run tests for uncommitteddb:test:prepare / Test cha...
+rake test:units                                        # Run tests for unitsdb:test:prepare / Run the unit t...
+rake time:zones:all                                    # Displays names of all time zones recognized by the ...
+rake time:zones:local                                  # Displays names of time zones recognized by the Rail...
+rake time:zones:us                                     # Displays names of US time zones recognized by the R...
+rake tmp:cache:clear                                   # Clears all files and directories in tmp/cache
+rake tmp:clear                                         # Clear session, cache, and socket files from tmp/
+rake tmp:create                                        # Creates tmp directories for sessions, cache, socket...
+rake tmp:pids:clear                                    # Clears all files in tmp/pids
+rake tmp:sessions:clear                                # Clears all files in tmp/sessions
+rake tmp:sockets:clear                                 # Clears all files in tmp/sockets
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~/app/ruby/redmine_weather]% [Krake -Tscript/generate redmine_plugin weather i18n ja[46Drake -T                                       [39D  redmine:plugins:hook_list
+(in /Users/agilekawabata/app/ruby/redmine_weather)
+DEPRECATION WARNING: Rake tasks in vendor/plugins/engines/tasks and vendor/plugins/open_id_authentication/tasks are deprecated. Use lib/tasks instead. (called from /Users/agilekawabata/.rvm/gems/ruby-1.8.7-p334@redmine/gems/rails-2.3.11/lib/tasks/rails.rb:10)
+app/controllers/account_controller.rb:
+  * [209] :controller_account_success_authentication_after, {:user => user })
+
+app/controllers/custom_fields_controller.rb:
+  * [ 39] :controller_custom_fields_new_after_save, :params => params, :custom_field => @custom_field)
+  * [ 49] :controller_custom_fields_edit_after_save, :params => params, :custom_field => @custom_field)
+
+app/controllers/issue_moves_controller.rb:
+  * [ 22] :controller_issues_move_before_save, { :params => params, :issue => issue, :target_project => @target_project, :copy => !!@copy })
+
+app/controllers/issues_controller.rb:
+  * [131] :controller_issues_new_before_save, { :params => params, :issue => @issue })
+  * [136] :controller_issues_new_after_save, { :params => params, :issue => @issue})
+  * [205] :controller_issues_bulk_edit_before_save, { :params => params, :issue => issue })
+
+app/controllers/journals_controller.rb:
+  * [ 73] :controller_journals_edit_post, { :journal => @journal, :params => params})
+
+app/controllers/messages_controller.rb:
+  * [ 64] :controller_messages_new_after_save, { :params => params, :message => @message})
+  * [ 78] :controller_messages_reply_after_save, { :params => params, :message => @reply})
+
+app/controllers/time_entry_reports_controller.rb:
+  * [196] :controller_timelog_available_criterias, { :available_criterias => @available_criterias, :project => @project })
+  * [205] :controller_timelog_time_report_joins, {:sql => sql} )
+
+app/controllers/timelog_controller.rb:
+  * [112] :controller_timelog_edit_before_save, { :params => params, :time_entry => @time_entry })
+  * [121] :controller_timelog_edit_before_save, { :params => params, :time_entry => @time_entry })
+  * [142] :controller_timelog_edit_before_save, { :params => params, :time_entry => @time_entry })
+  * [149] :controller_timelog_edit_before_save, { :params => params, :time_entry => @time_entry })
+
+app/controllers/wiki_controller.rb:
+  * [126] :controller_wiki_edit_after_save, { :params => params, :page => @page})
+
+app/helpers/issues_helper.rb:
+  * [149] :helper_issues_show_detail_after_setting, {:detail => detail, :label => label, :value => value, :old_value => old_value })
+
+app/models/changeset.rb:
+  * [210] :model_changeset_scan_commit_for_issue_ids_pre_issue_update,
+
+app/models/issue.rb:
+  * [552] :controller_issues_edit_before_save, { :params => params, :issue => self, :time_entry => @time_entry, :journal => @current_journal})
+  * [556] :controller_issues_edit_after_save, { :params => params, :issue => self, :time_entry => @time_entry, :journal => @current_journal})
+
+app/models/project.rb:
+  * [578] :model_project_copy_before_save, :source_project => project, :destination_project => self)
+
+app/views/account/login.rhtml:
+  * [  1] :view_account_login_top
+  * [ 42] :view_account_login_bottom
+
+app/views/context_menus/issues.html.erb:
+  * [  2] :view_issues_context_menu_start, {:issues => @issues, :can => @can, :back => @back })
+  * [120] :view_issues_context_menu_end, {:issues => @issues, :can => @can, :back => @back })
+
+app/views/custom_fields/_form.rhtml:
+  * [ 68] :view_custom_fields_form_upper_box, :custom_field => @custom_field, :form => f)
+  * [104] :"view_custom_fields_form_#{@custom_field.type.to_s.underscore}", :custom_field => @custom_field, :form => f)
+
+app/views/issue_moves/new.rhtml:
+  * [ 65] :view_issues_move_bottom, :issues => @issues, :target_project => @target_project, :copy => !!@copy)
+
+app/views/issue_statuses/_form.rhtml:
+  * [ 19] :view_issue_statuses_form, :issue_status => @issue_status)
+
+app/views/issues/_edit.rhtml:
+  * [ 38] :view_issues_edit_notes_bottom, { :issue => @issue, :notes => @notes, :form => f })
+
+app/views/issues/_form.rhtml:
+  * [  1] :view_issues_form_details_top, { :issue => @issue, :form => f })
+  * [ 40] :view_issues_form_details_bottom, { :issue => @issue, :form => f })
+
+app/views/issues/_history.rhtml:
+  * [ 18] :view_issues_history_journal_bottom, { :journal => journal })
+
+app/views/issues/_sidebar.rhtml:
+  * [  6] :view_issues_sidebar_issues_bottom)
+  * [ 14] :view_issues_sidebar_planning_bottom)
+  * [ 22] :view_issues_sidebar_queries_bottom)
+
+app/views/issues/bulk_edit.rhtml:
+  * [ 54] :view_issues_bulk_edit_details_bottom, { :issues => @issues })
+
+app/views/issues/index.rhtml:
+  * [ 74] :view_issues_index_bottom, { :issues => @issues, :project => @project, :query => @query })
+
+app/views/issues/show.rhtml:
+  * [ 45] :view_issues_show_details_bottom, :issue => @issue)
+  * [ 63] :view_issues_show_description_bottom, :issue => @issue)
+
+app/views/journals/_notes_form.rhtml:
+  * [  4] :view_journals_notes_form_after_notes, { :journal => @journal})
+
+app/views/journals/update.rjs:
+  * [ 10] :view_journals_update_rjs_bottom, { :page => page, :journal => @journal })
+
+app/views/layouts/base.rhtml:
+  * [ 21] :view_layouts_base_html_head
+  * [ 58] :view_layouts_base_sidebar
+  * [ 64] :view_layouts_base_content
+  * [ 78] :view_layouts_base_body_bottom
+
+app/views/my/account.rhtml:
+  * [  3] :view_my_account_contextual, :user => @user)
+  * [ 26] :view_my_account, :user => @user, :form => f)
+
+app/views/projects/_form.rhtml:
+  * [ 23] :view_projects_form, :project => @project, :form => f)
+
+app/views/projects/settings/_members.rhtml:
+  * [ 12] :view_projects_settings_members_table_header, :project => @project)
+  * [ 43] :view_projects_settings_members_table_row, { :project => @project, :member => member})
+
+app/views/projects/show.rhtml:
+  * [ 50] :view_projects_show_left, :project => @project)
+  * [ 63] :view_projects_show_right, :project => @project)
+  * [ 73] :view_projects_show_sidebar_bottom, :project => @project)
+
+app/views/reports/issue_report.rhtml:
+  * [ 16] :view_reports_issue_report_split_content_left, :project => @project)
+  * [ 31] :view_reports_issue_report_split_content_right, :project => @project)
+
+app/views/repositories/annotate.rhtml:
+  * [  1] :view_repositories_show_contextual, { :repository => @repository, :project => @project })
+
+app/views/repositories/changes.rhtml:
+  * [  1] :view_repositories_show_contextual, { :repository => @repository, :project => @project })
+
+app/views/repositories/entry.rhtml:
+  * [  1] :view_repositories_show_contextual, { :repository => @repository, :project => @project })
+
+app/views/repositories/show.rhtml:
+  * [  1] :view_repositories_show_contextual, { :repository => @repository, :project => @project })
+
+app/views/settings/_general.rhtml:
+  * [ 33] :view_settings_general_form)
+
+app/views/timelog/edit.rhtml:
+  * [ 21] :view_timelog_edit_form_bottom, { :time_entry => @time_entry, :form => f })
+
+app/views/users/_form.rhtml:
+  * [ 19] :view_users_form, :user => @user, :form => f)
+
+app/views/users/_memberships.rhtml:
+  * [ 11] :view_users_memberships_table_header, :user => @user )
+  * [ 39] :view_users_memberships_table_row, :user => @user, :membership => membership, :roles => roles, :projects => projects )
+
+app/views/users/show.rhtml:
+  * [ 32] :view_account_left_bottom, :user => @user
+  * [ 67] :view_account_right_bottom, :user => @user
+
+app/views/versions/index.html.erb:
+  * [ 25] :view_projects_roadmap_version_bottom, :version => version
+
+app/views/versions/show.rhtml:
+  * [  4] :view_versions_show_contextual, { :version => @version, :project => @project })
+  * [ 47] :view_versions_show_bottom, :version => @version
+
+app/views/welcome/index.rhtml:
+  * [ 12] :view_welcome_index_left, :projects => @projects)
+  * [ 31] :view_welcome_index_right, :projects => @projects)
+
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~/app/ruby/redmine_weather]% [KGGemfile     G  vvi Gemfile
+[?1049h[?1h=[1;53r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[53;1H"Gemfile" [noeol] 6L, 84C[>c[1;1Hsource 'http://rubygems.org'
+
+gem 'rails', '2.3.11'
+gem 'i18n', '0.4.2'
+
+gem 'mysql'
+[94m~                                                                                                                [8;1H~                                                                                                                [9;1H~                                                                                                                [10;1H~                                                                                                                [11;1H~                                                                                                                [12;1H~                                                                                                                [13;1H~                                                                                                                [14;1H~                                                                                                                [15;1H~                                                                                                                [16;1H~                                                                                                                [17;1H~                                                                                                                [18;1H~                                                                                                                [19;1H~                                                                                                                [20;1H~                                                                                                                [21;1H~                                                                                                                [22;1H~                                                                                                                [23;1H~                                                                                                                [24;1H~                                                                                                                [25;1H~                                                                                                                [26;1H~                                                                                                                [27;1H~                                                                                                                [28;1H~                                                                                                                [29;1H~                                                                                                                [30;1H~                                                                                                                [31;1H~                                                                                                                [32;1H~                                                                                                                [33;1H~                                                                                                                [34;1H~                                                                                                                [35;1H~                                                                                                                [36;1H~                                                                                                                [37;1H~                                                                                                                [38;1H~                                                                                                                [39;1H~                                                                                                                [40;1H~                                                                                                                [41;1H~                                                                                                                [42;1H~                                                                                                                [43;1H~                                                                                                                [44;1H~                                                                                                                [45;1H~                                                                                                                [46;1H~                                                                                                                [47;1H~                                                                                                                [48;1H~                                                                                                                [49;1H~                                                                                                                [50;1H~                                                                                                                [51;1H~                                                                                                                [52;1H~                                                                                                                [1;1H[?12l[?25h
+
+
+[?25l[m[53;1H[1m-- INSERT --[m[53;13H[K[5;52r[5;1H[L[1;53r[5;1H[?12l[?25h[?25lg[?12l[?25h[?25lge[?12l[?25h[?25lem[?12l[?25h[?25l [?12l[?25h[?25l '[?12l[?25h[?25l'i[?12l[?25h[?25li1[?12l[?25h[?25l18[?12l[?25h[?25l8n[?12l[?25h[?25ln_[?12l[?25h[?25l_g[?12l[?25h[?25lge[?12l[?25h[?25len[?12l[?25h[?25lne[?12l[?25h[?25ler[?12l[?25h[?25lra[?12l[?25h[?25lat[?12l[?25h[?25lto[?12l[?25h[?25lor[?12l[?25h[?25lrs[?12l[?25h[?25ls'[?12l[?25h[53;1H[K[5;21H[?25l[?12l[?25h[?25l[53;1H"Gemfile" 7L, 107C written
+[?1l>[?12l[?25h[?1049l[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~/app/ruby/redmine_weather]% [Kbbundle
+Using rake (0.8.7) 
+Using activesupport (2.3.11) 
+Using rack (1.1.2) 
+Using actionpack (2.3.11) 
+Using actionmailer (2.3.11) 
+Using activerecord (2.3.11) 
+Using activeresource (2.3.11) 
+Using unf_ext (0.0.4) 
+Using unf (0.0.4) 
+Using domain_name (0.5.2) 
+Using i18n (0.4.2) 
+Using net-http-digest_auth (1.2) 
+Using net-http-persistent (2.4) 
+Using nokogiri (1.5.0) 
+Using ntlm-http (0.1.1) 
+Using webrobots (0.0.13) 
+Using mechanize (2.1) 
+Using i18n_generators (1.1.0) 
+Using mysql (2.8.1) 
+Using rails (2.3.11) 
+Using bundler (1.0.21) 
+[32mYour bundle is complete! Use `bundle show [gemname]` to see where a bundled gem is installed.[0m
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~/app/ruby/redmine_weather]% [Ksscript[1m [0m[0m /generate[1m [0m[0m i18n ja
+config.load_paths is deprecated and removed in Rails 3, please use autoload_paths instead
+config.load_paths= is deprecated and removed in Rails 3, please use autoload_paths= instead
+/Users/agilekawabata/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/site_ruby/1.8/rubygems.rb:812:in `report_activate_error': Could not find RubyGem gettext (< 2) (Gem::LoadError)
+	from /Users/agilekawabata/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/site_ruby/1.8/rubygems.rb:223:in `activate'
+	from /Users/agilekawabata/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/site_ruby/1.8/rubygems.rb:1146:in `gem'
+	from /Users/agilekawabata/.rvm/gems/ruby-1.8.7-p334@redmine/gems/i18n_generators-1.1.0/generators/i18n/../i18n_locale/i18n_locale_command.rb:5
+	from /Users/agilekawabata/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+	from /Users/agilekawabata/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+	from /Users/agilekawabata/.rvm/gems/ruby-1.8.7-p334@redmine/gems/activesupport-2.3.11/lib/active_support/dependencies.rb:182:in `require'
+	from /Users/agilekawabata/.rvm/gems/ruby-1.8.7-p334@redmine/gems/activesupport-2.3.11/lib/active_support/dependencies.rb:547:in `new_constants_in'
+	from /Users/agilekawabata/.rvm/gems/ruby-1.8.7-p334@redmine/gems/activesupport-2.3.11/lib/active_support/dependencies.rb:182:in `require'
+	from /Users/agilekawabata/.rvm/gems/ruby-1.8.7-p334@redmine/gems/i18n_generators-1.1.0/generators/i18n/i18n_generator.rb:86
+	from /Users/agilekawabata/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+	from /Users/agilekawabata/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+	from /Users/agilekawabata/.rvm/gems/ruby-1.8.7-p334@redmine/gems/activesupport-2.3.11/lib/active_support/dependencies.rb:182:in `require'
+	from /Users/agilekawabata/.rvm/gems/ruby-1.8.7-p334@redmine/gems/activesupport-2.3.11/lib/active_support/dependencies.rb:547:in `new_constants_in'
+	from /Users/agilekawabata/.rvm/gems/ruby-1.8.7-p334@redmine/gems/activesupport-2.3.11/lib/active_support/dependencies.rb:182:in `require'
+	from /Users/agilekawabata/.rvm/gems/ruby-1.8.7-p334@redmine/gems/rails-2.3.11/lib/rails_generator/spec.rb:17:in `klass'
+	from /Users/agilekawabata/.rvm/gems/ruby-1.8.7-p334@redmine/gems/rails-2.3.11/lib/rails_generator/lookup.rb:140:in `instance'
+	from /Users/agilekawabata/.rvm/gems/ruby-1.8.7-p334@redmine/gems/rails-2.3.11/lib/rails_generator/scripts/../scripts.rb:31:in `run'
+	from /Users/agilekawabata/.rvm/gems/ruby-1.8.7-p334@redmine/gems/rails-2.3.11/lib/commands/generate.rb:6
+	from /Users/agilekawabata/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+	from /Users/agilekawabata/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+	from script/generate:3
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~/app/ruby/redmine_weather]% [Kscript/generate i18n ja[23Dbundle                 [17Dvi Gemfile[10Drake redmine:plugins:hook_list[25D-T                       [23Dscript/generate redmine_plugin weather i18n ja-h                                         s  ccd
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~]% [Krrvm gemset use weather
+[32mNow using gemset 'weather'(B[m
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~]% [Kggem list
+
+*** LOCAL GEMS ***
+
+actionmailer (2.3.14)
+actionpack (2.3.14)
+activerecord (2.3.14)
+activeresource (2.3.14)
+activesupport (2.3.14)
+bundler (1.0.21)
+i18n (0.4.2)
+rack (1.1.3)
+rails (2.3.14)
+rake (0.9.2.2, 0.8.7)
+rdoc (2.4.2)
+rubygems-update (1.8.15)
+sqlite3 (1.3.5)
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~]% [Kccd redmine[1m/[0m[0m 
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~/redmine]% [K
+bck-i-search: _[K[Acd [4mr[24medmine[1B[9Dr_[A[4mr[4ma[24mk[24me redmine:load_default_data[1B[28Da_[A[4mr[4ma[4mk[24m[1Bk_[A[2C[4mk[4me[24m[1Be_[A[3C[4me[4m [24m[1B _[A[4C[4m [4md[24mb:[2Cgrate               [1B[24Dd_[A[8D[5C[4md[4mb[24m[1Bb_[A[9D[15C_plugins[23D[24mr[24ma[24mk[24me[24m [24md[24mb[1B[K[A[14C[1Brake aborted!
+no such file to load -- weatherhacks
+
+Tasks: TOP => db:migrate_plugins => environment
+(See full trace by running task with --trace)
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~/redmine]% [Kccd vendor[1m/[0m[0m/plugins[1m/[0m[0m/w redmine_weather[1m/[0m[0m 
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~/redmine/.../plugins/redmine_weather]% [Klll
+total 136
+drwxr-xr-x  14 agilekawabata  staff    476  2  3 23:41 [36m.[39;49m[0m/
+drwxr-xr-x  19 agilekawabata  staff    646  2  4 02:44 [36m..[39;49m[0m/
+-rw-r--r--@  1 agilekawabata  staff     52  2  3 23:39 Gemfile
+-rw-r--r--   1 agilekawabata  staff    602  2  3 23:41 Gemfile.lock
+-rw-r--r--   1 agilekawabata  staff     33 10 22 00:49 README.rdoc
+drwxr-xr-x   6 agilekawabata  staff    204 10 22 00:49 [36mapp[39;49m[0m/
+drwxr-xr-x   5 agilekawabata  staff    170 10 22 00:49 [36massets[39;49m[0m/
+drwxr-xr-x   3 agilekawabata  staff    102 10 22 00:49 [36mconfig[39;49m[0m/
+drwxr-xr-x   3 agilekawabata  staff    102 10 22 00:49 [36mdb[39;49m[0m/
+-rw-r--r--@  1 agilekawabata  staff    365  2  4 01:25 init.rb
+drwxr-xr-x   3 agilekawabata  staff    102 10 22 00:49 [36mlang[39;49m[0m/
+drwxr-xr-x   4 agilekawabata  staff    136  2  4 00:14 [36mlib[39;49m[0m/
+drwxr-xr-x   6 agilekawabata  staff    204 10 22 01:18 [36mtest[39;49m[0m/
+-rw-r--r--   1 agilekawabata  staff  53214  2  4 00:11 typescript
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~/redmine/.../plugins/redmine_weather]% [Kbbundle
+Fetching source index for http://rubygems.org/
+Installing unf_ext (0.0.4) with native extensions 
+Installing unf (0.0.4) 
+Installing domain_name (0.5.2) 
+Installing net-http-digest_auth (1.2) 
+Installing net-http-persistent (2.4) 
+Installing nokogiri (1.5.0) with native extensions 
+Installing ntlm-http (0.1.1) WARNING: ntlm-http-0.1.1 has an invalid nil value for @cert_chain
+
+Installing webrobots (0.0.13) 
+Installing mechanize (2.1) 
+Installing i18n_generators (1.1.0) 
+Using bundler (1.0.21) 
+[32mYour bundle is complete! Use `bundle show [gemname]` to see where a bundled gem is installed.[0m
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~/redmine/.../plugins/redmine_weather]% [Kbundlell    bundlell    cd vendor/plugins/redmine_weather[33Drake db:migrate_plugins          [10D[23Dcd vendor/plugins/redmine_weather[33Dll                               [31Dl  ccd ..
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~/redmine/vendor/plugins]% [Kccd ..
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~/redmine/vendor]% [Kccd ..
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~/redmine]% [Kcd ..bundlell    cd vendor/plugins/redmine_weather[33Drake db:migrate_plugins          [10D
+rake aborted!
+no such file to load -- weatherhacks
+
+Tasks: TOP => db:migrate_plugins => environment
+(See full trace by running task with --trace)
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~/redmine]% [Kccd vendor[1m/[0m[0m/plugins[1m/[0m[0m 
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~/redmine/vendor/plugins]% [Kccd redmine_weather[1m/[0m[0m 
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~/redmine/.../plugins/redmine_weather]% [Kbbundle
+Fetching source index for http://rubygems.org/
+Installing weatherhacks (0.2.0) 
+Using bundler (1.0.21) 
+[32mYour bundle is complete! Use `bundle show [gemname]` to see where a bundled gem is installed.[0m
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~/redmine/.../plugins/redmine_weather]% [Kbundlecd redmine_weather[15Dvendor/plugins [17Drake db:migrate_plugins                    r  ccd 
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~]% [Kccd redmine[1m/[0m[0m 
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~/redmine]% [Kcd redmine       bundlecd redmine_weather[15Dvendor/plugins [17Drake db:migrate_plugins
+Migrating engines...
+Migrating acts_as_activity_provider...
+Migrating acts_as_attachable...
+Migrating acts_as_customizable...
+Migrating acts_as_event...
+Migrating acts_as_list...
+Migrating acts_as_searchable...
+Migrating acts_as_tree...
+Migrating acts_as_versioned...
+Migrating acts_as_watchable...
+Migrating awesome_nested_set...
+Migrating classic_pagination...
+Migrating gravatar...
+Migrating open_id_authentication...
+Migrating prepend_engine_views...
+Migrating redmine_weather...
+==  CreateWeatherSettings: migrating ==========================================
+-- create_table(:weather_settings)
+   -> 0.0012s
+==  CreateWeatherSettings: migrated (0.0216s) =================================
+
+==  CreateCities: migrating ===================================================
+-- create_table(:cities)
+   -> 0.0031s
+==  CreateCities: migrated (0.0158s) ==========================================
+
+Migrating rfpdf...
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~/redmine]% [Ksscript[1m [0m[0m     s  ccd
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~]% [Kccd redmine-1.2.3
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~/redmine-1.2.3]% [Kggem list    env
+RubyGems Environment:
+  - RUBYGEMS VERSION: 1.6.2
+  - RUBY VERSION: 1.8.7 (2011-02-18 patchlevel 334) [i686-darwin11.1.0]
+  - INSTALLATION DIRECTORY: /Users/agilekawabata/.rvm/gems/ruby-1.8.7-p334@weather
+  - RUBY EXECUTABLE: /Users/agilekawabata/.rvm/rubies/ruby-1.8.7-p334/bin/ruby
+  - EXECUTABLE DIRECTORY: /Users/agilekawabata/.rvm/gems/ruby-1.8.7-p334@weather/bin
+  - RUBYGEMS PLATFORMS:
+    - ruby
+    - x86-darwin-11
+  - GEM PATHS:
+     - /Users/agilekawabata/.rvm/gems/ruby-1.8.7-p334@weather
+     - /Users/agilekawabata/.rvm/gems/ruby-1.8.7-p334@global
+  - GEM CONFIGURATION:
+     - :update_sources => true
+     - :verbose => true
+     - :benchmark => false
+     - :backtrace => false
+     - :bulk_threshold => 1000
+     - "gem" => "--no-ri --no-rdoc"
+     - :sources => ["http://rubygems.org/", "http://gems.github.com"]
+  - REMOTE SOURCES:
+     - http://rubygems.org/
+     - http://gems.github.com
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~/redmine-1.2.3]% [Kggem list
+
+*** LOCAL GEMS ***
+
+actionmailer (2.3.14)
+actionpack (2.3.14)
+activerecord (2.3.14)
+activeresource (2.3.14)
+activesupport (2.3.14)
+bundler (1.0.21)
+domain_name (0.5.2)
+i18n (0.4.2)
+i18n_generators (1.1.0)
+mechanize (2.1)
+net-http-digest_auth (1.2)
+net-http-persistent (2.4)
+nokogiri (1.5.0)
+ntlm-http (0.1.1)
+rack (1.1.3)
+rails (2.3.14)
+rake (0.9.2.2, 0.8.7)
+rdoc (2.4.2)
+rubygems-update (1.8.15, 1.6.2)
+sqlite3 (1.3.5)
+unf (0.0.4)
+unf_ext (0.0.4)
+weatherhacks (0.2.0)
+webrobots (0.0.13)
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~/redmine-1.2.3]% [Kccd c  
+bck-i-search: _[K[A[4Ccd [4mr[24medmine-1.2.3[1B[21Dr_[A[6C[4mr[4ma[24mk[24me redmine:load_default_data[1B[34Da_[A[2C[4mr[4ma[4mk[24m[1Bk_[A[1C[2C[4mk[4me[24m[1Be_[A[3C[4me[4m [24m[1B _[A[4C[4m [4md[24mb:[2Cgrate               [1B[30Dd_[A[5C[4md[4mb[24m[1Bb_[A[6C[4mb[4m:[24m[1B:_[A[7C[4m:[4mm[24m[1Bm_[A[8C[4mm[4mi[24m[1Bi_[A[15C_plugins[23D[24mr[24ma[24mk[24me[24m [24md[24mb[24m:[24mm[24mi[1B[K[A[19C[1BWARNING: 'require 'rake/rdoctask'' is deprecated.  Please use 'require 'rdoc/task' (in RDoc 2.4.2+)' instead.
+    at /Users/agilekawabata/.rvm/gems/ruby-1.8.7-p334@weather/gems/rake-0.9.2.2/lib/rake/rdoctask.rb
+WARNING: 'task :t, arg, :needs => [deps]' is deprecated.  Please use 'task :t, [args] => [deps]' instead.
+    at /Users/agilekawabata/redmine-1.2.3/lib/tasks/email.rake:170
+Migrating engines...
+Migrating acts_as_activity_provider...
+Migrating acts_as_attachable...
+Migrating acts_as_customizable...
+Migrating acts_as_event...
+Migrating acts_as_list...
+Migrating acts_as_searchable...
+Migrating acts_as_tree...
+Migrating acts_as_versioned...
+Migrating acts_as_watchable...
+Migrating awesome_nested_set...
+Migrating classic_pagination...
+Migrating gravatar...
+Migrating open_id_authentication...
+Migrating prepend_engine_views...
+Migrating redmine_weather...
+==  CreateWeatherSettings: migrating ==========================================
+-- create_table(:weather_settings)
+   -> 0.0012s
+==  CreateWeatherSettings: migrated (0.0079s) =================================
+
+==  CreateCities: migrating ===================================================
+-- create_table(:cities)
+   -> 0.0013s
+==  CreateCities: migrated (0.0106s) ==========================================
+
+Migrating rfpdf...
+Migrating ruby-net-ldap-0.0.4...
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~/redmine-1.2.3]% [Kccd
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~]% [Kvvi .git/conf     config[1m [0m[0m 
+[?1049h[?1h=[1;53r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[53;1H".gitconfig" 5L, 94C[>c[1;1H[106m[[muser[106m][m[2;8H name = agilekawabata[3;8H email = kawabata.agile@gmail.com
+[mergetool][5;8H keepBackup = true
+[94m~                                                                                                                [7;1H~                                                                                                                [8;1H~                                                                                                                [9;1H~                                                                                                                [10;1H~                                                                                                                [11;1H~                                                                                                                [12;1H~                                                                                                                [13;1H~                                                                                                                [14;1H~                                                                                                                [15;1H~                                                                                                                [16;1H~                                                                                                                [17;1H~                                                                                                                [18;1H~                                                                                                                [19;1H~                                                                                                                [20;1H~                                                                                                                [21;1H~                                                                                                                [22;1H~                                                                                                                [23;1H~                                                                                                                [24;1H~                                                                                                                [25;1H~                                                                                                                [26;1H~                                                                                                                [27;1H~                                                                                                                [28;1H~                                                                                                                [29;1H~                                                                                                                [30;1H~                                                                                                                [31;1H~                                                                                                                [32;1H~                                                                                                                [33;1H~                                                                                                                [34;1H~                                                                                                                [35;1H~                                                                                                                [36;1H~                                                                                                                [37;1H~                                                                                                                [38;1H~                                                                                                                [39;1H~                                                                                                                [40;1H~                                                                                                                [41;1H~                                                                                                                [42;1H~                                                                                                                [43;1H~                                                                                                                [44;1H~                                                                                                                [45;1H~                                                                                                                [46;1H~                                                                                                                [47;1H~                                                                                                                [48;1H~                                                                                                                [49;1H~                                                                                                                [50;1H~                                                                                                                [51;1H~                                                                                                                [52;1H~                                                                                                                [1;1H[?12l[?25h[?25l[m[53;1H[K[53;1H:[?12l[?25hq[?25l[53;1H[K[53;1H[?1l>[?12l[?25h[?1049l[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~]% [Krrake -   r  ccd redmine-1.2.3
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~/redmine-1.2.3]% [Krrake -T
+WARNING: 'require 'rake/rdoctask'' is deprecated.  Please use 'require 'rdoc/task' (in RDoc 2.4.2+)' instead.
+    at /Users/agilekawabata/.rvm/gems/ruby-1.8.7-p334@weather/gems/rake-0.9.2.2/lib/rake/rdoctask.rb
+WARNING: 'task :t, arg, :needs => [deps]' is deprecated.  Please use 'task :t, [args] => [deps]' instead.
+    at /Users/agilekawabata/redmine-1.2.3/lib/tasks/email.rake:170
+rake ci                                                # Run the Continous Integration tests for Redmine
+rake ci:build                                          # Build Redmine
+rake ci:dump_environment                               # Dump the environment information to a BUILD_ENVIRON...
+rake ci:setup                                          # Setup Redmine for a new build.
+rake ci:teardown                                       # Finish the build
+rake config/initializers/session_store.rb              # Generates a configuration file for cookie store ses...
+rake db:abort_if_pending_migrations                    # Raises an error if there are pending migrations
+rake db:charset                                        # Retrieves the charset for the current environment's...
+rake db:collation                                      # Retrieves the collation for the current environment...
+rake db:create                                         # Create the database defined in config/database.yml ...
+rake db:create:all                                     # Create all the local databases defined in config/da...
+rake db:decrypt                                        # Decrypts SCM and LDAP passwords in the database.
+rake db:drop                                           # Drops the database for the current RAILS_ENV
+rake db:drop:all                                       # Drops all the local databases defined in config/dat...
+rake db:encrypt                                        # Encrypts SCM and LDAP passwords in the database.
+rake db:fixtures:identify                              # Search for a fixture given a LABEL or ID.
+rake db:fixtures:load                                  # Load fixtures into the current environment's database.
+rake db:fixtures:plugins:load                          # Load plugin fixtures into the current environment's...
+rake db:migrate                                        # Migrate the database through scripts in db/migrate ...
+rake db:migrate:all                                    # Migrate database and plugins to current status.
+rake db:migrate:down                                   # Runs the "down" for a given migration VERSION.
+rake db:migrate:plugin                                 # Migrate a specified plugin.
+rake db:migrate:plugins                                # Migrate plugins to current status.
+rake db:migrate:redo                                   # Rollbacks the database one migration and re migrate...
+rake db:migrate:reset                                  # Resets your database using your migrations for the ...
+rake db:migrate:up                                     # Runs the "up" for a given migration VERSION.
+rake db:migrate:upgrade_plugin_migrations              # For engines coming from Rails version < 2.0 or for ...
+rake db:migrate_plugins                                # Migrates installed plugins.
+rake db:reset                                          # Drops and recreates the database from db/schema.rb ...
+rake db:rollback                                       # Rolls the schema back to the previous version.
+rake db:schema:dump                                    # Create a db/schema.rb file that can be portably use...
+rake db:schema:load                                    # Load a schema.rb file into the database
+rake db:seed                                           # Load the seed data from db/seeds.rb
+rake db:sessions:clear                                 # Clear the sessions table
+rake db:sessions:create                                # Creates a sessions migration for use with ActiveRec...
+rake db:setup                                          # Create the database, load the schema, and initializ...
+rake db:structure:dump                                 # Dump the database structure to a SQL file
+rake db:test:clone                                     # Recreate the test database from the current environ...
+rake db:test:clone_structure                           # Recreate the test databases from the development st...
+rake db:test:load                                      # Recreate the test database from the current schema.rb
+rake db:test:prepare                                   # Check for pending migrations and load the test schema
+rake db:test:purge                                     # Empty the test database
+rake db:version                                        # Retrieves the current schema version number
+rake doc:app                                           # Build the RDoc HTML Files
+rake doc:clobber_app                                   # Remove RDoc products
+rake doc:clobber_plugins                               # Remove plugin documentation
+rake doc:clobber_rails                                 # Remove RDoc products
+rake doc:guides                                        # Generate Rails guides
+rake doc:plugins                                       # Generate documentation for all installed plugins
+rake doc:plugins:acts_as_activity_provider             # Generate documentation for the acts_as_activity_pro...
+rake doc:plugins:acts_as_activity_providerenvironment  # Create plugin documentation for 'acts_as_activity_p...
+rake doc:plugins:acts_as_attachable                    # Generate documentation for the acts_as_attachable p...
+rake doc:plugins:acts_as_attachableenvironment         # Create plugin documentation for 'acts_as_attachable'
+rake doc:plugins:acts_as_customizable                  # Generate documentation for the acts_as_customizable...
+rake doc:plugins:acts_as_customizableenvironment       # Create plugin documentation for 'acts_as_customizable'
+rake doc:plugins:acts_as_event                         # Generate documentation for the acts_as_event plugin
+rake doc:plugins:acts_as_eventenvironment              # Create plugin documentation for 'acts_as_event'
+rake doc:plugins:acts_as_list                          # Generate documentation for the acts_as_list plugin
+rake doc:plugins:acts_as_listenvironment               # Create plugin documentation for 'acts_as_list'
+rake doc:plugins:acts_as_searchable                    # Generate documentation for the acts_as_searchable p...
+rake doc:plugins:acts_as_searchableenvironment         # Create plugin documentation for 'acts_as_searchable'
+rake doc:plugins:acts_as_tree                          # Generate documentation for the acts_as_tree plugin
+rake doc:plugins:acts_as_treeenvironment               # Create plugin documentation for 'acts_as_tree'
+rake doc:plugins:acts_as_versioned                     # Generate documentation for the acts_as_versioned pl...
+rake doc:plugins:acts_as_versionedenvironment          # Create plugin documentation for 'acts_as_versioned'
+rake doc:plugins:acts_as_watchable                     # Generate documentation for the acts_as_watchable pl...
+rake doc:plugins:acts_as_watchableenvironment          # Create plugin documentation for 'acts_as_watchable'
+rake doc:plugins:awesome_nested_set                    # Generate documentation for the awesome_nested_set p...
+rake doc:plugins:awesome_nested_setenvironment         # Create plugin documentation for 'awesome_nested_set'
+rake doc:plugins:classic_pagination                    # Generate documentation for the classic_pagination p...
+rake doc:plugins:classic_paginationenvironment         # Create plugin documentation for 'classic_pagination'
+rake doc:plugins:engines                               # Generate documentation for the engines plugin
+rake doc:plugins:enginesenvironment                    # Create plugin documentation for 'engines'
+rake doc:plugins:gravatar                              # Generate documentation for the gravatar plugin
+rake doc:plugins:gravatarenvironment                   # Create plugin documentation for 'gravatar'
+rake doc:plugins:open_id_authentication                # Generate documentation for the open_id_authenticati...
+rake doc:plugins:open_id_authenticationenvironment     # Create plugin documentation for 'open_id_authentica...
+rake doc:plugins:prepend_engine_views                  # Generate documentation for the prepend_engine_views...
+rake doc:plugins:prepend_engine_viewsenvironment       # Create plugin documentation for 'prepend_engine_views'
+rake doc:plugins:redmine_weather                       # Generate documentation for the redmine_weather plugin
+rake doc:plugins:redmine_weatherenvironment            # Create plugin documentation for 'redmine_weather'
+rake doc:plugins:rfpdf                                 # Generate documentation for the rfpdf plugin
+rake doc:plugins:rfpdfenvironment                      # Create plugin documentation for 'rfpdf'
+rake doc:plugins:ruby-net-ldap-0.0.4                   # Generate documentation for the ruby-net-ldap-0.0.4 ...
+rake doc:plugins:ruby-net-ldap-0.0.4environment        # Create plugin documentation for 'ruby-net-ldap-0.0.4'
+rake doc:rails                                         # Build the RDoc HTML Files
+rake doc:reapp                                         # Force a rebuild of the RDoc files
+rake doc:rerails                                       # Force a rebuild of the RDoc files
+rake extract_fixtures                                  # Create YAML test fixtures from data in an existing ...
+rake gems                                              # List the gems that this rails application depends on
+rake gems:build                                        # Build any native extensions for unpacked gems
+rake gems:build:force                                  # Force the build of all gems
+rake gems:install                                      # Installs all required gems.
+rake gems:refresh_specs                                # Regenerate gem specifications in correct format.
+rake gems:unpack                                       # Unpacks all required gems into vendor/gems.
+rake gems:unpack:dependencies                          # Unpacks all required gems and their dependencies in...
+rake generate_session_store                            # Generates a configuration file for cookie store ses...
+rake locales                                           # Updates and checks locales against en.yml
+rake locales:add_key                                   # Adds a new top-level translation string to all loca...
+rake locales:check_interpolation                       # Checks interpolation arguments in locals against en...
+rake locales:remove_key                                # Removes a translation string from all locale file (...
+rake locales:update                                    # Updates language files based on en.yml content (onl...
+rake log:clear                                         # Truncates all *.log files in log/ to zero bytes
+rake middleware                                        # Prints out your Rack middleware stack
+rake notes                                             # Enumerate all annotations
+rake notes:custom                                      # Enumerate a custom annotation, specify with ANNOTAT...
+rake notes:fixme                                       # Enumerate all FIXME annotations
+rake notes:optimize                                    # Enumerate all OPTIMIZE annotations
+rake notes:todo                                        # Enumerate all TODO annotations
+rake open_id_authentication:db:clear                   # Clear the authentication tables
+rake open_id_authentication:db:create                  # Creates authentication tables for use with OpenIdAu...
+rake open_id_authentication:db:upgrade                 # Upgrade authentication tables from ruby-openid 1.x....
+rake rails:freeze:edge                                 # Lock to latest Edge Rails, for a specific release u...
+rake rails:freeze:gems                                 # Lock this application to the current gems (by unpac...
+rake rails:template                                    # Applies the template supplied by LOCATION=/path/to/...
+rake rails:unfreeze                                    # Unlock this application from freeze of gems or edge...
+rake rails:update                                      # Update both configs, scripts and public/javascripts...
+rake rails:update:application_controller               # Rename application.rb to application_controller.rb
+rake rails:update:configs                              # Update config/boot.rb from your current rails install
+rake rails:update:generate_dispatchers                 # Generate dispatcher files in RAILS_ROOT/public
+rake rails:update:javascripts                          # Update your javascripts from your current rails ins...
+rake rails:update:scripts                              # Add new scripts to the application script/ directory
+rake redmine:email:read                                # Read an email from standard input.
+rake redmine:email:receive_imap                        # Read emails from an IMAP server.
+rake redmine:email:receive_pop3                        # Read emails from an POP3 server.
+rake redmine:email:test[login]                         # Send a test email to the user with the provided log...
+rake redmine:fetch_changesets                          # Fetch changesets from the repositories
+rake redmine:load_default_data                         # Load Redmine default configuration data.
+rake redmine:migrate_from_mantis                       # Mantis migration script
+rake redmine:migrate_from_trac                         # Trac migration script
+rake redmine:permissions                               # List all permissions and the actions registered wit...
+rake redmine:plugins:hook_list                         # Enumerate all Redmine plugin hooks and their contex...
+rake redmine:send_reminders                            # Send reminders about issues due in the next days.
+rake redmine:watchers:prune                            # Removes watchers from what they can no longer view.
+rake routes                                            # Print out all defined routes in match order, with n...
+rake secret                                            # Generate a crytographically secure secret key.
+rake stats                                             # Report code statistics (KLOCs, etc) from the applic...
+rake test                                              # Run all unit, functional and integration tests
+rake test:benchmark                                    # Run tests for benchmarkdb:test:prepare / Benchmark ...
+rake test:coverage                                     # Measures test coverage
+rake test:engines:all                                  # Run tests from within engines plugins (plugins with...
+rake test:engines:functionals                          # Run tests for functionalstest:plugins:setup_plugin_...
+rake test:engines:integration                          # Run tests for integrationtest:plugins:setup_plugin_...
+rake test:engines:units                                # Run tests for unitstest:plugins:setup_plugin_fixtures
+rake test:functionals                                  # Run tests for functionalsdb:test:prepare / Run the ...
+rake test:integration                                  # Run tests for integrationdb:test:prepare / Run the ...
+rake test:plugins                                      # Run tests for pluginsenvironment / Run the plugin t...
+rake test:plugins:all                                  # Run the plugin tests in vendor/plugins/**/test (or ...
+rake test:plugins:functionals                          # Run tests for functionalssetup_plugin_fixtures
+rake test:plugins:integration                          # Run tests for integrationsetup_plugin_fixtures
+rake test:plugins:setup_plugin_fixtures                # Mirrors plugin fixtures into a single location to h...
+rake test:plugins:units                                # Run tests for unitssetup_plugin_fixtures
+rake test:profile                                      # Run tests for profiledb:test:prepare / Profile the ...
+rake test:recent                                       # Run tests for recentdb:test:prepare / Test recent c...
+rake test:scm                                          # Run unit and functional scm tests
+rake test:scm:functionals                              # Run tests for functionalsdb:test:prepare / Run the ...
+rake test:scm:setup:all                                # Creates all test repositories
+rake test:scm:setup:bazaar                             # Creates a test bazaar repository
+rake test:scm:setup:create_dir                         # Creates directory for test repositories
+rake test:scm:setup:cvs                                # Creates a test cvs repository
+rake test:scm:setup:darcs                              # Creates a test darcs repository
+rake test:scm:setup:filesystem                         # Creates a test filesystem repository
+rake test:scm:setup:git                                # Creates a test git repository
+rake test:scm:setup:mercurial                          # Creates a test mercurial repository
+rake test:scm:setup:subversion                         # Creates a test subversion repository
+rake test:scm:units                                    # Run tests for unitsdb:test:prepare / Run the scm un...
+rake test:scm:update                                   # Updates installed test repositories
+rake test:uncommitted                                  # Run tests for uncommitteddb:test:prepare / Test cha...
+rake test:units                                        # Run tests for unitsdb:test:prepare / Run the unit t...
+rake time:zones:all                                    # Displays names of all time zones recognized by the ...
+rake time:zones:local                                  # Displays names of time zones recognized by the Rail...
+rake time:zones:us                                     # Displays names of US time zones recognized by the R...
+rake tmp:cache:clear                                   # Clears all files and directories in tmp/cache
+rake tmp:clear                                         # Clear session, cache, and socket files from tmp/
+rake tmp:create                                        # Creates tmp directories for sessions, cache, socket...
+rake tmp:pids:clear                                    # Clears all files in tmp/pids
+rake tmp:sessions:clear                                # Clears all files in tmp/sessions
+rake tmp:sockets:clear                                 # Clears all files in tmp/sockets
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~/redmine-1.2.3]% [Krrvm gemset u list
+
+gemsets for ruby-1.8.7-p334 (found in /Users/agilekawabata/.rvm/gems/ruby-1.8.7-p334)
+   credentials
+   global
+   litre-j
+   mdb
+   redmine
+   seriallistener187
+=> weather
+
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~/redmine-1.2.3]% [K
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~/redmine-1.2.3]% [K
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~/redmine-1.2.3]% [K
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~/redmine-1.2.3]% [K
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~/redmine-1.2.3]% [K
+[1m[7m%[27m[1m[0m                                                                                                                 [0m[27m[24m[J[~/redmine-1.2.3]% [K
