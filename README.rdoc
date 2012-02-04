@@ -1,3 +1,31 @@
-= weather
+= Redmine Weather Plugin
 
-Description goes here
+Redmine plugin to show weather forecast. (service for Japan area)
+
+
+== Setup
+
+=== Installation
+
+In Redmine app run:
+
+  $ script/plugin install https://github.com/agilekawabata/redmine-weather.git
+
+or clone it into /vendor/plugins/
+
+  $ git clone git@github.com:agilekawabata/redmine-weather.git
+
+Install gems
+
+  $ cd vendor/plugins/redmine_weather/
+  $ bundle install
+
+Run plugin migrations
+
+  $ cd [your redmine dir]
+  $ rake db:migrate_plugins
+
+
+== Copyright & License
+
+Copyright (c) 2012 Mitsuyoshi Kawabata, Agileware (http://agileware.jp). MIT License.
